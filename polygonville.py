@@ -38,7 +38,7 @@ def func1(totalSides, sideLength, angle, totalAngles):
         turtle.right(30)
             
 def func2(totalSides, sideLength, angle, totalAngles):
-    #make turtle move forward(pixels) 
+    #make turtle move forward(pixels) to draw polygons other than triangles. 
     for i in range(0, totalSides):
         turtle.forward(sideLength)
         if angle <= 90:
