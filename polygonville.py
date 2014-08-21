@@ -3,7 +3,7 @@ import turtle
 def main():
     # set up the name of the window
     turtle.title("Polygonville")
-    # setup the screen size through (425, 425)
+    # setup the screen size through (1000, 650)
     # setup the initial location through (0,0)
     turtle.setup(1000,650,0,0)
     print("Welcome to Polygonville!")
