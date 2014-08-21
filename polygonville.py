@@ -9,7 +9,7 @@ def main():
     print("Welcome to Polygonville!")
     totalSides = input("Input number of sides in the polygon: ")
     while totalSides != 0:
-        if totalSides < 3 && totalSides != 0:
+        if totalSides < 3:
             print("Sorry, " + str(totalSides) + " is not "
             + "valid, try again or press 0 to exit")
         elif totalSides == 3:
@@ -22,9 +22,10 @@ def main():
             sideLength = input("Put polygon side length: ")
             angle = totalAngles/totalSides
             func2(totalSides, sideLength, angle, totalAngles)
-        print("Polygon Summary: \n" + 
-            "Sides: " + str(totalSides) + "| Anterior Angle: " + 
-            str(angle) + "| Sum of Angles: " + str(totalAngles))
+        if totalSides > 3:
+            print("Polygon Summary: \n" + 
+                "Sides: " + str(totalSides) + "| Anterior Angle: " + 
+                str(angle) + "| Sum of Angles: " + str(totalAngles))
         totalSides = input("\nInput number of sides in the polygon: ")
     if totalSides == 0:
         print("Thank you for using Polygonville!")
@@ -45,4 +46,4 @@ def func2(totalSides, sideLength, angle, totalAngles):
         else:
             turtle.right(180 - angle)
 main()
-turtle.exitonclick()   
+turtle.exitonclick() 
