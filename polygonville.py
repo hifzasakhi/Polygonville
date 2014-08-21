@@ -9,9 +9,9 @@ def main():
     print("Welcome to Polygonville!")
     totalSides = input("Input number of sides in the polygon: ")
     while totalSides != 0:
-        if totalSides < 3:
+        if totalSides < 3 && totalSides != 0:
             print("Sorry, " + str(totalSides) + " is not "
-            + "valid, click window to exit")
+            + "valid, try again or press 0 to exit")
         elif totalSides == 3:
             totalAngles = 180 * (totalSides - 2)
             sideLength = input("Put polygon sidelength: ")
